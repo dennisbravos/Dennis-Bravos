@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+ <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Personal Website</title>
+
+          <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">"
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+          <link rel="stylesheet" href="css/style.css">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <Script src="js/scripts.js"></Script>
+          
+     </head>
+     <body>
+ <!--NavBar-->
+
+ <nav class="navbar">
+      <div calss="inner-width">
+          <a href="/" class="logo"></a>
+          <button class="menu-toggler">
+              <span></span>
+              <span></span>
+              <span></span>
+              </button>
+              <div class="navbar-menu">
+                  <a href="#">Home</a>
+                  <a href="#">About Us</a>
+                  <a href="#">Find Us</a>
+                  <a href="#">Programming</a>
+                  <a href="#">Contact</a>
+                  <a href="#">Login</a>
+                  </div>
+                </div>
+            </nav>
+
+     <!--Home-->
+
+      <section id="home">
+           <div class="inner-width">
+               <div class="content">
+               <h1>Hi I'm </h1>
+                <div class="sm"></div>
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linked-in"></a>
+                <a href="#" class="fab fa-youtube"></a>
+           </div>
+                <div class="buttons">
+                    <a href="#">Contact Me</a>
+                    <a href="#">Download CV</a>
+                </div>
+            </div>
+        </div>
+     </section>
+
+        
+      
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Ubuntu",sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar{
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    padding: 30px 0;
+    top: 0;
+    z-index: 999;
+    transition: .3s linear;
+}
+
+.inner-width{
+ max-width: 1300px;
+ margin: auto;
+ padding: 0 40px;
+
+}
+
+.navbar .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+
+    width: 44px;
+    height: 32px;
+    background-image: url(crown.png);
+    background-size:contain;
+}
+
+.menu-toggler{
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+}
+
+.menu-toggler span{
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    position: relative;
+    transition:  .3s linear;
+}
+.navbar-menu a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .2s linear;
+}
+
+.navbar-menu a:hover{
+    color: #48dbfb;
+}
+
+.sticky{
+    background-color: #fff;
+    padding:18px 0;
+
+}
+
+.sticky .logo{
+    background-image: url(crown.png);
+}
+
+.sticky .navbar-menu a{
+    columns: #111;
+}
+
+.sticky .menu-toggler span{
+    background-color:#111;
+}
+
+#home{
+    height: 100vh;
+    min-height: 500px;
+    background: url(bgimage2.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment:  fixed;
+}
+
+#home .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#home .content{
+    width: 100%;
+    color: #fff;
+}
+
+#home .content h1{
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+
+#home .content h1::after{
+    content: "LILITO";
+    animation: textanim 10s linear infinite;
+}
+
+@keyframes textanim{
+    25%{
+        content: "A Developer";
+    }
+50%{
+    content: "A Youtuber";
+}
+75%{
+    content: "A Designer";
+}
+}
+
+.sm a{
+    color: #fff;
+    font-size: 22px;
+    margin: 0 10px;
+    transition: .2s linear;
+}
+
+.sm a:hover{
+    color: #48dbfb;
+}
+
+#home .buttons{
+    margin-top: 60px;
+}
+#home .buttons a{
+    display: inline-block;
+    margin: 15px 30px;
+    color: #48dbfb;
+    font-size: 15px;
+    font-weight: 500;
+    width: 180px;
+    border: 1px solid #48dbfb;
+    padding:  14px 0;
+    border-radius: 6px;
+    transition: .2s linear;
+}
+
+#home .buttons a:hover,
+#home .buttons a:nth-child(2)
+{
+    background-color: #48dbfb;
+    color:#fff;
+}
+
+
+</style>
+
+     </body>
+ </html>
